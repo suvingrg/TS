@@ -1,0 +1,52 @@
+
+/* removing whitespaces */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* body adjustments */
+body {
+  width: 100%;
+  font-size: 17px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/************************************************************/
+
+/* topbar */
+#topbar {
+  background-color: #2f2f2f;
+  /*position: fixed;*/
+  width: 100%;
+}
+
+#topbar a {
+  color: #ECF0F1;
+}
+
+#topnav {
+  position: fixed;
+  right: 0px;
+  top: 23px;
+}
+/************************************************************/
+#socialmedia {
+
+}
+
+#home {
+  height: 700px;
+  background-color: #202020;
+}
