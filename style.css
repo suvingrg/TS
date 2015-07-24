@@ -1,3 +1,6 @@
+/* importing google fonts */
+@import url(http://fonts.googleapis.com/css?family=Audiowide);
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro:500,700);
 
 /* removing whitespaces */
 * {
@@ -8,6 +11,7 @@
 /* body adjustments */
 body {
   width: 100%;
+  font-family: 'Maven Pro', sans-serif;
   font-size: 17px;
 }
 
@@ -20,6 +24,7 @@ ul li {
 }
 
 a {
+  font-family: 'Audiowide', cursive;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -28,12 +33,18 @@ a {
 /* topbar */
 #topbar {
   background-color: #2f2f2f;
-  /*position: fixed;*/
+  position: fixed;
   width: 100%;
+  display: inline-block;
 }
 
 #topbar a {
   color: #ECF0F1;
+}
+
+#topbar #icns {
+  width: 39px;
+  height: 39px;
 }
 
 #topnav {
@@ -41,12 +52,15 @@ a {
   right: 0px;
   top: 23px;
 }
-/************************************************************/
+
 #socialmedia {
-
+  padding: 7px;
 }
+/************************************************************/
 
+/* homepage */
 #home {
-  height: 700px;
+  height: 1700px;
+  padding-top: 100px;
   background-color: #202020;
 }
