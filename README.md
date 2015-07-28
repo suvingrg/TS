@@ -1,4 +1,5 @@
 # ts
 A portfolio page for a startup.
 
-A site under construction.
+Used resources
+- jQuery slick plugin : http://kenwheeler.github.io/slick/

@@ -11,8 +11,9 @@
 /* body adjustments */
 body {
   width: 100%;
-  font-family: 'Maven Pro', sans-serif;
-  font-size: 17px;
+  font: 29px 'Maven Pro', sans-serif;
+  overflow-x: hidden;
+  text-align: left;
 }
 
 ul {
@@ -28,6 +29,12 @@ a {
   text-decoration: none;
   text-transform: uppercase;
 }
+
+h1 {
+  text-transform: uppercase;
+  font-size: 32px;
+}
+
 /************************************************************/
 
 /* topbar */
@@ -36,31 +43,238 @@ a {
   position: fixed;
   width: 100%;
   display: inline-block;
+  z-index: 10;
 }
 
 #topbar a {
   color: #ECF0F1;
 }
 
-#topbar #icns {
+#topnav a:hover, #topbar a:active {
+  color: #2980b9;
+}
+
+#socialmedia .icns {
   width: 39px;
   height: 39px;
+  padding: 4px 7px;
 }
 
 #topnav {
   position: fixed;
-  right: 0px;
-  top: 23px;
+  right: 7px;
+  top: 21px;
+  font-size: 17px;
 }
 
-#socialmedia {
-  padding: 7px;
+#topnav a {
+  padding-right: 17px;
 }
+
+#socialmedia .fb:hover {
+  background-color: #35529a;
+}
+
+#socialmedia .tw:hover {
+  background-color: #2daaf5;
+}
+
+#socialmedia .gp:hover {
+  background-color: #f23014;
+}
+
+#header {
+  font: italic 39px 'Audiowide', Cursive;
+}
+
 /************************************************************/
 
 /* homepage */
 #home {
-  height: 1700px;
+  width: 100%;
+  height: 540px;
   padding-top: 100px;
-  background-color: #202020;
+  background: url('img/dummy1.jpg') no-repeat; /* ideal image size - 1920x1080 */
+  background-size: cover;
+}
+
+#home h1 {
+  font-size: 100px;
+  position: relative;
+  left: 400px;
+
+}
+
+#logo {
+  width: 49px;
+  height: 49px;
+  position: relative;
+  left: 200px;
+  top: 59px;
+}
+
+/************************************************************/
+
+/* info page */
+#info {
+  background-color: #7f8c8d;
+  min-height: 400px;
+  padding-bottom: 29px;
+}
+
+#info h1 {
+  padding: 59px 0 0 1040px;
+}
+
+/* mutual properties of info and portfolio page */
+.carousel #carousel-img {
+  padding: 38px 0 0 178px;
+  position: absolute;
+}
+
+#content {
+  padding: 0 39px 39px 0;
+  background-color: #666;
+}
+
+#content p {
+  padding: 0 29px 0 370px;
+}
+
+h2 {
+  text-transform: uppercase;
+  padding: 39px 17px 0 370px;
+}
+
+/************************************************************/
+
+/* portfolio page */
+#portf {
+  background-color: #404040;
+  min-height: 400px;
+  padding-bottom: 39px;
+}
+
+#portf h1 {
+  padding: 59px 0 0 1111px;
+}
+/************************************************************/
+
+/* contact page */
+#contact {
+  background-color: #ECECEC;
+  min-height: 700px;
+  padding-top: 59px;
+  color: #2f2f2f;
+}
+
+#contact h1 {
+  padding-left: 1210px;
+}
+
+#contact h2 {
+  font-size: 29px;
+  padding-left: 300px;
+}
+
+fieldset {
+  border: none;
+}
+
+.contactForm {
+  float: left;
+  padding: 77px 0 0 300px;
+}
+
+#email, #msg, #submit,
+#usrname, #pwd, #loginSubmit, #cancel {
+  font: 22px 'Audiowide', Cursive;
+  color: #404040;
+  background-color: inherit;
+  border-style: none;
+}
+#email {
+  width: 570px;
+  border-bottom: 2px solid #404040;
+}
+
+#msg {
+  border-bottom: 2px solid #404040;
+}
+
+#submit {
+  border-radius: 17px;
+  background-color: #2f2f2f;
+  padding: 17px;
+  color: #ececec;
+}
+
+#submit:hover {
+  background-color: #4a4a4a;
+  color: #eee;
+}
+
+.or-sec {
+  padding: 0 0 77px 300px;
+  font-size: 22px;
+}
+/************************************************************/
+
+/* bottombar */
+#bottombar {
+  background-color: #2f2f2f;
+  padding: 17px;
+  font-size: 17px;
+  color: #7a7a7a;
+  box-shadow: inset 0px 7px 6px #1e1e1e;
+}
+
+/************************************************************/
+
+/* admin login box */
+#adminLogin {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  background-color: #2c3e50;
+  width: 400px;
+  border-radius: 10px;
+  font: 22px 'Audiowide', cursive;
+  display: block;
+  opacity: 0.9;
+}
+
+#adminLogin h2 {
+  color: #ececec;
+  padding: 17px 0 0 52px;
+}
+
+#adminLogin fieldset {
+  border:none;
+  padding: 21px 45px;
+}
+
+#usrname, #pwd, #loginSubmit, #cancel {
+  border-radius: 10px;
+  color: #bdc3c7;
+  padding: 4px 10px;
+}
+
+#loginSubmit, #cancel {
+  padding: 10px;
+  background-color: inherit;
+  color: #7f8c8d;
+  font-size: 17px;
+}
+
+#usrname:focus, #pwd:focus,
+#loginSubmit:hover, #cancel:hover {
+  background-color: #34495e;
+}
+
+/************************************************************/
+
+/* media queries for responsiveness */
+@media query {
+  
 }
