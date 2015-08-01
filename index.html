@@ -23,7 +23,7 @@
 
       <!-- social media icons -->
   		<ul id="socialmedia" style="margin: 0;">
-        <!-- <li id="header">TS</li> -->
+        <li id="header" ondblclick="adminLogin();">TS</li>
   			<li><a href="facebook.com/ts" class="fb"><img class="icns fb" src="img/icns/facebook.png"></a></li>
   			<li><a href="twitter.com/ts" class="tw"><img class="icns tw" src="img/icns/twitter.png" ></a></li>
   			<li><a href="plus.google.com/ts" class="gp"><img class="icns gp" src="img/icns/google+.png" ></a></li>
@@ -32,10 +32,10 @@
   		<!-- main top navbar -->
   		<nav id="topnav">
   			<ul>
-  				<li><a href="#home">home</a></li>
-  				<li><a href="#info">info</a></li>
-  				<li><a href="#portf">portfolio</a></li>
-  				<li><a href="#contact">contact</a></li>
+  				<li><a href="#home" id="lhome" onclick="selected('lhome');">home</a></li>
+  				<li><a href="#info" id="linfo" onclick="selected('linfo');">info</a></li>
+  				<li><a href="#portf" id="lportf" onclick="selected('lportf');">portfolio</a></li>
+  				<li><a href="#contact" id="lcontact" onclick="selected('lcontact');">contact</a></li>
   			</ul>
   		</nav>
   		<!-- main top navbar ends -->
@@ -164,15 +164,17 @@
 
     <!-- admin login -->
     <div id="adminLogin">
-      <h2>Login</h2>
-      <fieldset>
-        <form class="" action="index.html" method="post">
-          <input type="text" id="usrname" placeholder="Username" /><br /><br />
-          <input type="password" id="pwd" placeholder="Password" /><br /><br />
-          <input type="submit" id="loginSubmit" value="LOGIN" />
-          <button id="cancel" onclick="toggleVisibility();">CANCEL</button>
-        </form>
-      </fieldset>
+      <div id="loginbox">
+        <h2>Login</h2>
+        <fieldset>
+          <form class="" action="index.html" method="post">
+            <input type="text" id="usrname" placeholder="Username" /><br /><br />
+            <input type="password" id="pwd" placeholder="Password" /><br /><br />
+            <input type="submit" id="loginSubmit" value="LOGIN" />
+            <button type="button" id="cancel" onclick="document.getElementById('adminLogin').style.display='none';">CANCEL</button>
+          </form>
+        </fieldset>
+      </div>
      </div>
     <!-- admin login ends -->
 
