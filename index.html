@@ -5,15 +5,17 @@
 
     <title>TS</title>
 
-    <link rel="stylesheet" href="style.css" type="text/css">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="customscripts.js" charset="utf-8"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="customscripts.js" charset="utf-8"></script>
 
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="responsive.css" type="text/css" />
 
   </head>
   <body>
@@ -21,12 +23,14 @@
     <!-- topbar starts -->
     <div id="topbar">
 
+      <img src="" id="header" onclick="togglenav('#topnav');" ondblclick="adminLogin();" alt="" />
+      <img id="menu" src="img/icns/menu.png" />
+
       <!-- social media icons -->
-  		<ul id="socialmedia" style="margin: 0;">
-        <li id="header" ondblclick="adminLogin();">TS</li>
-  			<li><a href="facebook.com/ts" class="fb"><img class="icns fb" src="img/icns/facebook.png"></a></li>
-  			<li><a href="twitter.com/ts" class="tw"><img class="icns tw" src="img/icns/twitter.png" ></a></li>
-  			<li><a href="plus.google.com/ts" class="gp"><img class="icns gp" src="img/icns/google+.png" ></a></li>
+  		<ul id="socialmedia">
+  			<li><a href="https://www.facebook.com/ts"><img id="icns" src="img/icns/fb.png" onmouseover="this.src='img/icns/fa.png'" onmouseout="this.src='img/icns/fb.png'"></a></li>
+  			<li><a href="https://www.twitter.com/ts"><img id="icns" src="img/icns/tw.png" onmouseover="this.src='img/icns/ta.png'" onmouseout="this.src='img/icns/tw.png'"></a></li>
+  			<li><a href="https://www.plus.google.com/ts"><img id="icns" src="img/icns/g+.png" onmouseover="this.src='img/icns/ga.png'" onmouseout="this.src='img/icns/g+.png'"></a></li>
   		</ul>
 
   		<!-- main top navbar -->
@@ -46,7 +50,7 @@
     <!-- homepage starts -->
     <div id="home">
 
-      <img src="img/logo.png" id="logo" />
+      <img src="img/rocket.png" id="logo" />
       <h1>ts solutions</h1>
 
     </div>
@@ -156,7 +160,7 @@
       <p>
 
       </p>
-      <p style="padding-left: 1243px; color: #666;">
+      <p id="designer">
         v1.0 by TS
       </p>
     </div>
@@ -178,19 +182,8 @@
      </div>
     <!-- admin login ends -->
 
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-
     <script type="text/javascript">
-      $(document).ready(function() {
-        $('.carousel').slick({
-          infinite: false,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          swipeToSlide: true,
-          dots: false,
-          touchThreshold: 3,
-        });
-      });
+      $(document).ready(carousel());
     </script>
 
   </body>

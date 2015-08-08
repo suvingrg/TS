@@ -1,0 +1,564 @@
+/* media queries for responsiveness */
+
+/* for iphone 4, 4s, 5, 5s, 6, 6 plus */
+@media all and (max-width: 414px) {
+
+  * {
+    font-size: 13px;
+  }
+
+  #socialmedia {
+    /*box-shadow: 7px 0px 7px #000;*/
+    padding-left: 45%;
+  }
+
+  #menu {
+    display: block;
+    height: 39px;
+    width: 39px;
+    position: absolute;
+    top: 11%;
+    left: 21%;
+  }
+
+  #topnav{
+    position: static;
+    display: none;
+  }
+
+  #topnav ul li {
+    padding: 4px 17px;
+    box-shadow: inset 1px 1px 7px #000;
+    height: 0px;
+  }
+
+  #home {
+    height: auto;
+    background-size: cover;
+    padding-bottom: 21%;
+  }
+
+  #logo {
+    padding: 0% 0 0 32%;
+  }
+
+  #home h1 {
+    font-size: 39px;
+    margin: 0;
+    padding-left: 21%;
+  }
+
+  #info {
+    padding-bottom: 1px;
+  }
+
+  #info h1, #portf h1, #contact h1 {
+    padding: 7px;
+  }
+
+  .carousel #carousel-img {
+    padding: 32px 0 0 77px;
+  }
+
+  #content {
+    padding: 0px;
+  }
+
+  #content p {
+    padding: 7px 32px 44px 44px;
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 19px;
+    padding: 177px 0 0 45px;
+  }
+
+  .slick-prev {
+    left: 0px;
+    width: 19px;
+    padding: 7px 7px 7px 7px;
+  }
+
+  .slick-next {
+    padding: 7px;
+  }
+
+  #portf {
+    padding-bottom: 1px;
+  }
+
+  #contact {
+    padding: 0px;
+    min-height: 500px;
+  }
+
+  #contact h2 {
+    padding: 7px 9px 0px 9px;
+    font-size: 19px;
+  }
+
+  .contactForm {
+    padding: 17px 0 0 9px;
+  }
+
+  #email, #msg, #submit,
+  #usrname, #pwd, #loginSubmit, #cancel {
+    font: 13px 'Audiowide', Cursive;
+  }
+  #email, #msg {
+    width: 200px;
+  }
+
+  .or-sec {
+    padding: 0 0 77px 9px;
+  }
+
+  #designer {
+    padding-left: 0px;
+  }
+
+}
+
+/***********************************************************************/
+
+/* for devices between 414px and 710px resolution */
+@media all and (min-width: 414px) and (max-width: 710px) {
+
+  * {
+    font-size: 14px;
+  }
+
+  #socialmedia {
+    padding-left: 59%;
+  }
+
+  #menu {
+    display: block;
+    height: 39px;
+    width: 39px;
+    position: absolute;
+    top: 11%;
+    left: 17%;
+  }
+
+  #topnav{
+    position: static;
+    display: none;
+  }
+
+  #topnav ul li {
+    padding: 4px 17px;
+    box-shadow: inset 1px 1px 7px #000;
+    height: 0px;
+  }
+
+  #home {
+    height: auto;
+    background-size: cover;
+    padding-bottom: 21%;
+  }
+
+  #logo {
+    padding: 0% 0 0 32%;
+  }
+
+  #home h1 {
+    font-size: 52px;
+    margin: 0;
+    padding-left: 21%;
+  }
+
+  #info {
+    padding-bottom: 1px;
+  }
+
+  #info h1, #portf h1, #contact h1 {
+    padding: 7px;
+  }
+
+  .carousel #carousel-img {
+    padding: 32px 0 0 77px;
+  }
+
+  #content {
+    padding: 0px;
+  }
+
+  #content p {
+    padding: 7px 32px 44px 44px;
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 19px;
+    padding: 177px 0 0 45px;
+  }
+
+  .slick-prev {
+    left: 0px;
+    width: 19px;
+    padding: 7px 7px 7px 7px;
+  }
+
+  .slick-next {
+    padding: 7px;
+  }
+
+  #portf {
+    padding-bottom: 1px;
+  }
+
+  #contact {
+    padding: 0px;
+    min-height: 500px;
+  }
+
+  #contact h2 {
+    padding: 7px 9px 0px 9px;
+    font-size: 19px;
+  }
+
+  .contactForm {
+    padding: 17px 0 0 9px;
+  }
+
+  #email, #msg, #submit,
+  #usrname, #pwd, #loginSubmit, #cancel {
+    font: 13px 'Audiowide', Cursive;
+  }
+
+  #email, #msg {
+    width: 200px;
+  }
+
+  .or-sec {
+    padding: 0 0 77px 9px;
+  }
+
+  #designer {
+    padding-left: 0px;
+  }
+
+}
+
+
+/***********************************************************************/
+
+
+/*for ipad, blackberry playbook, nexus 7 */
+@media all and (min-width: 710px) and (max-width: 1024px) {
+
+  * {
+    font-size: 15px;
+  }
+
+  #socialmedia {
+    padding-left: 25%;
+  }
+
+  #home {
+    height: auto;
+    background-size: cover;
+    padding-bottom: 21%;
+  }
+
+  #logo {
+    padding: 2% 0 0 20%;
+  }
+
+  #home h1 {
+    font-size: 77px;
+    margin-top: -8%;
+  }
+
+  #info, #portf {
+    padding-bottom: 1px;
+    min-height: auto;
+  }
+
+  #info h1, #portf h1, #contact h1 {
+    padding: 7px;
+  }
+
+  .carousel #carousel-img {
+    padding: 32px 0 0 77px;
+  }
+
+  #content {
+    padding: 0px;
+  }
+
+  #content p {
+    padding: 7px 72px 44px 251px;
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 19px;
+    padding: 49px 0 0 250px;
+  }
+
+  .slick-prev {
+    left: 0px;
+    width: 19px;
+    padding: 7px 7px 7px 7px;
+  }
+
+  .slick-next {
+    padding: 7px;
+  }
+
+  #portf {
+    padding-bottom: 1px;
+  }
+
+  #contact {
+    padding: 0px;
+    min-height: 500px;
+  }
+
+  #contact h2 {
+    padding: 7px 9px 0px 146px;
+    font-size: 19px;
+  }
+
+  .contactForm {
+    padding: 17px 0 0 146px;
+  }
+
+  #email, #msg, #submit,
+  #usrname, #pwd, #loginSubmit, #cancel {
+    font: 14px 'Audiowide', Cursive;
+  }
+
+  #email, #msg {
+    width: 200px;
+  }
+
+  .or-sec {
+    padding: 0 0 77px 147px;
+  }
+
+  #designer {
+    padding-left: 0px;
+  }
+
+}
+
+/***********************************************************************/
+
+/*for ipad, blackberry playbook, nexus 7 */
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+
+  * {
+    font-size: 16px;
+  }
+
+  #socialmedia {
+    padding-left: 25%;
+  }
+
+  #home {
+    height: auto;
+    background-size: cover;
+    padding-bottom: 21%;
+  }
+
+  #logo {
+    padding: 2% 0 0 20%;
+  }
+
+  #home h1 {
+    font-size: 77px;
+    margin-top: -8%;
+  }
+
+  #info, #portf {
+    padding-bottom: 1px;
+    min-height: auto;
+  }
+
+  #info h1, #portf h1, #contact h1 {
+    padding: 7px;
+  }
+
+  .carousel #carousel-img {
+    padding: 32px 0 0 77px;
+  }
+
+  #content {
+    padding: 0px;
+  }
+
+  #content p {
+    padding: 7px 72px 77px 251px;
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 19px;
+    padding: 49px 0 0 250px;
+  }
+
+  .slick-prev {
+    left: 0px;
+    width: 19px;
+    padding: 7px 7px 7px 7px;
+  }
+
+  .slick-next {
+    padding: 7px;
+  }
+
+  #portf {
+    padding-bottom: 1px;
+  }
+
+  #contact {
+    padding: 0px;
+    min-height: 500px;
+  }
+
+  #contact h2 {
+    padding: 7px 9px 0px 320px;
+    font-size: 19px;
+  }
+
+  .contactForm {
+    padding: 17px 0 0 320px;
+  }
+
+  #email, #msg, #submit,
+  #usrname, #pwd, #loginSubmit, #cancel {
+    font: 16px 'Audiowide', Cursive;
+  }
+  #email, #msg {
+    width: 400px;
+  }
+
+  .or-sec {
+    padding: 0 0 77px 320px;
+  }
+
+  #designer {
+    padding-left: 0px;
+  }
+
+}
+
+/***********************************************************************/
+
+/*for kindle fire with hdx */
+@media all and (min-width: 1366px) and (max-width: 2560px) {
+
+  * {
+    font-size: 29px;
+  }
+
+  #socialmedia {
+    padding-left: 10%;
+  }
+
+  #socialmedia #icns {
+    width: 77px;
+    height: 77px;
+    padding: 4px 7px;
+  }
+
+  #topnav {
+    top: 2%;
+  }
+
+  #home {
+    height: auto;
+    background-size: cover;
+    padding-bottom: 10%;
+  }
+
+  #logo {
+    padding: 6% 0 0 20%;
+    width: 300px;
+    height: 300px;
+  }
+
+  #home h1 {
+    font-size: 150px;
+    margin-top: -10%;
+  }
+
+  #info, #portf {
+    padding-bottom: 1px;
+    min-height: auto;
+  }
+
+  #info h1, #portf h1, #contact h1 {
+    padding: 7px;
+    font-size: 77px;
+  }
+
+  .carousel #carousel-img {
+    padding: 45px 0 0 100px;
+    width: 200px;
+    height: 200px;
+  }
+
+  #content {
+    padding: 0px;
+  }
+
+  #content p {
+    padding: 7px 72px 77px 369px;
+    font-size: 39px;
+  }
+
+  h2 {
+    font-size: 49px;
+    padding: 49px 0 0 369px;
+  }
+
+  .slick-prev {
+    left: 0px;
+    width: 19px;
+    padding: 7px 7px 7px 7px;
+  }
+
+  .slick-next {
+    padding: 7px;
+  }
+
+  #portf {
+    padding-bottom: 1px;
+  }
+
+  #contact {
+    padding: 0px;
+    min-height: 500px;
+  }
+
+  #contact h2 {
+    padding: 7px 9px 0px 479px;
+    font-size: 39px;
+  }
+
+  .contactForm {
+    padding: 39px 0 9px 479px;
+  }
+
+  #email, #msg, #submit,
+  #usrname, #pwd, #loginSubmit, #cancel {
+    font: 29px 'Audiowide', Cursive;
+  }
+  #email, #msg {
+    width: 700px;
+  }
+
+  .or-sec {
+    padding: 0 0 77px 479px;
+  }
+
+  #designer {
+    padding-left: 0px;
+  }
+
+}
