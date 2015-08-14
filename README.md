@@ -1,4 +1,4 @@
-# ts
+# ts-v1.0
 A portfolio page for a startup.
 
 Used resources
