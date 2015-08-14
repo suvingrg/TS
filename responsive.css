@@ -8,7 +8,6 @@
   }
 
   #socialmedia {
-    /*box-shadow: 7px 0px 7px #000;*/
     padding-left: 45%;
   }
 
@@ -17,19 +16,22 @@
     height: 39px;
     width: 39px;
     position: absolute;
-    top: 11%;
-    left: 21%;
+    top: 7px;
+    left: 77px;
   }
 
   #topnav{
-    position: static;
     display: none;
+    position: static;
   }
 
   #topnav ul li {
     padding: 4px 17px;
     box-shadow: inset 1px 1px 7px #000;
-    height: 0px;
+    display: list-item;
+  }
+  #topnav ul li:last-child {
+    box-shadow: inset 0px 0px 7px #000;
   }
 
   #home {
@@ -122,8 +124,8 @@
 
 /***********************************************************************/
 
-/* for devices between 414px and 710px resolution */
-@media all and (min-width: 414px) and (max-width: 710px) {
+/* for devices between 415px and 710px resolution */
+@media all and (min-width: 415px) and (max-width: 710px) {
 
   * {
     font-size: 14px;
@@ -138,19 +140,19 @@
     height: 39px;
     width: 39px;
     position: absolute;
-    top: 11%;
-    left: 17%;
+    top: 7px;
+    left: 77px;
   }
 
   #topnav{
     position: static;
     display: none;
+    height: 27px;
   }
 
   #topnav ul li {
-    padding: 4px 17px;
-    box-shadow: inset 1px 1px 7px #000;
-    height: 0px;
+    padding: 10px 17px;
+
   }
 
   #home {
@@ -247,7 +249,7 @@
 
 
 /*for ipad, blackberry playbook, nexus 7 */
-@media all and (min-width: 710px) and (max-width: 1024px) {
+@media all and (min-width: 711px) and (max-width: 1024px) {
 
   * {
     font-size: 15px;
@@ -348,7 +350,7 @@
 
 /***********************************************************************/
 
-/*for ipad, blackberry playbook, nexus 7 */
+/*for laptop with touch and midi or hidpi screen */
 @media all and (min-width: 1024px) and (max-width: 1280px) {
 
   * {
@@ -450,7 +452,7 @@
 /***********************************************************************/
 
 /*for kindle fire with hdx */
-@media all and (min-width: 1366px) and (max-width: 2560px) {
+@media all and (min-width: 2100px) and (max-width: 2560px) {
 
   * {
     font-size: 29px;

@@ -76,16 +76,12 @@ h1 {
   padding-right: 17px;
 }
 
-#header {
-
+#sname {
+  position: absolute;
 }
 
 #menu {
   display: none;
-}
-
-.selected {
-  color: #2980b9;
 }
 
 /************************************************************/
@@ -95,7 +91,7 @@ h1 {
   width: 100%;
   height: 540px;
   padding-top: 100px;
-  background: url('img/dummy1.jpg') no-repeat; /* ideal image size - 1920x1080 */
+  background: scroll url('img/dummy1.jpg') no-repeat; /* ideal image size - 1920x1080 */
   background-size: cover;
 }
 
@@ -217,6 +213,7 @@ fieldset {
   padding: 0 0 77px 300px;
   font-size: 22px;
 }
+
 /************************************************************/
 
 /* bottombar */
