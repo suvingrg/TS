@@ -23,7 +23,7 @@
     <!-- topbar starts -->
     <div id="topbar">
 
-      <!-- <img id="sname" ondblclick="document.getElementById('adminLogin').style.display='block';" src="img/icns/menu.png" /> -->
+      <img id="sname" ondblclick="$('.adminLogin').css('display', 'block');" src="img/icns/menu.png" />
       <img id="menu" src="img/icns/menu.png" />
 
       <!-- social media icons -->
@@ -175,7 +175,7 @@
             <input type="text" id="usrname" placeholder="Username" /><br /><br />
             <input type="password" id="pwd" placeholder="Password" /><br /><br />
             <input type="submit" id="loginSubmit" value="LOGIN" />
-            <button type="button" id="cancel" onclick="document.getElementById('adminLogin').style.display='none';">CANCEL</button>
+            <button type="button" id="cancel" onclick="$('.adminLogin').css('display', 'none');">CANCEL</button>
           </form>
         </fieldset>
       </div>
